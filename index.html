@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rescisão Trabalhista</title>
+    <title>Calculadora de Rescisão CLT</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<header class="topbar">
+    <button class="menu-btn">☰</button>
+
+    <nav class="menu">
+        <a href="#">Calculadora FGTS</a>
+        <a href="#">Calculadora Férias</a>
+        <a href="#">Saque-Aniversário</a>
+    </nav>
+</header>
+    <main class="contariner">
+
+        <section class="info">
+            <h1>Caculadora<br>Rescisão Trabalhista</h1>
+            <p>
+                Simule sua rescisão CLT de forma simples, rápida
+                e com valores aproximados.
+            </p>
+        </section class="Calculator">
+
+            <div class="inputs">
+
+                <div class="input-group">
+                    <label>Data de contratação</label>
+                    <input type="date">
+                </div>
+
+                <div class="input-group">
+                    <label>Sálario atual</label>
+                    <input type="text" placeholder="R$ 0,00">
+                </div>
+
+                <div class="input-group">
+                    <label>Data de dispensa</label>
+                    <input type="date">
+                </div>
+
+                <div class="input-group">
+                    <label>Forma de demissão</label>
+                    <select>
+                        <option value="">Selecione</option>
+                        <option>Sem justa causa</option>
+                        <option>Pedido de demissão</option>
+                        <option>Com justa causa</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Aviso prévio?</label>
+                    <select>
+                        <option>Sim</option>
+                        <option>Não</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Férias vencidas?</label>
+                    <select>
+                        <option>Não</option>
+                        <option>Sim</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Saldo FGTS</label>
+                    <input type="text" placeholder="R$ 0,00">
+                </div>
+
+                <div class="input-group">
+                    <label>Dias trabalhados</label>
+                    <input type="number" placeholder="Ex: 15">
+                </div>                
+            </div>
+
+            <button>Calcular Rescisão</button>
+
+            <div class="resultado">
+                <p>Resultado aparece aqui.</p>
+            </div>  
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 • Calculadora Saque Aniversário FGTS</p>
+        <p>Desenvolvido por Gabriel Seabra</p>
+    </footer>
+
 </body>
+
 </html>
