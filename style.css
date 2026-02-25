@@ -10,11 +10,13 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .topbar {
+    width: 100%;
     background: #083358;
-    padding: 10px 20px;
+    padding: 0px 20px;
     display: flex;
     align-items: center;
     position: relative;
@@ -51,7 +53,8 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 900px;
+    width: 100%;
     margin: auto;
     background: #ffffff;
     border-radius: 20px;
@@ -60,7 +63,7 @@ body {
 }
 
 .info {
-    width: 45%;
+    flex: 0 0 50%;
     background: #083358;
     color: #ffffff;
     padding: 40px;
@@ -69,45 +72,70 @@ body {
     justify-content: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.info-texto {
+    margin-top: 90px;
+    margin-bottom: auto;
+}
+
 .info h1 {
     font-size: 32px;
-    color: #ffd717;
     margin-bottom: 20px;
+    color: #ffd717;
 }
 
 .info p {
     font-size: 16px;
     line-height: 1.5;
+    opacity: 0.9;  
 }
 
 .calculator {
-    width: 55%;
+    flex: 0 0 50%;
     padding: 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 }
 
 .inputs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+    background-color: #ffffff;
+
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
+    
 }
 
 .input-group label {
-    font-size: 13px;
-    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    margin-left: 5px;
+
     color: #083358;
+    
 }
 
 .input-group input,
 .input-group select {
     height: 44px;
+    width: 100%;
     padding: 0 14px;
     border-radius: 8px;
     border: 2px solid #a2b0c0;
@@ -136,19 +164,31 @@ button:hover {
 }
 
 .resultado {
+    margin-top: 20px;
     background: #e0f2fe;
-    padding: 16px;
-    border-radius: 12px;
-    text-align: center;
-    font-weight: 600;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
+.resultado p {
+    font-size: 20px;
+    color: #0369a1;
+}
+    
+
+
 .footer {
-    background: #083358;
-    color: #ffd717;
+    width: 100%;
     text-align: center;
-    padding: 12px;
-    font-size: 13px;
+    padding: 10px;
+    font-size: 12px;
+    color: #ffd717;
+    background-color: #083358;
+    margin-top: 30px;
 }
 
 
