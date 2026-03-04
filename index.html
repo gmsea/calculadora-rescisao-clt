@@ -41,22 +41,22 @@
 
                 <div class="input-group">
                     <label>Data de contratação</label>
-                    <input type="date">
+                    <input type="date" id="dataContratacao">
                 </div>
 
                 <div class="input-group">
                     <label>Sálario atual</label>
-                    <input type="text" placeholder="R$ 0,00">
+                    <input type="text" id="salario" placeholder="R$ 0,00">
                 </div>
 
                 <div class="input-group">
                     <label>Data de dispensa</label>
-                    <input type="date">
+                    <input type="date" id="dataDispensa">
                 </div>
 
                 <div class="input-group">
                     <label>Forma de demissão</label>
-                    <select>
+                    <select id="tipoDemissao">
                         <option value="">Selecione</option>
                         <option>Sem justa causa</option>
                         <option>Pedido de demissão</option>
@@ -66,7 +66,7 @@
 
                 <div class="input-group">
                     <label>Aviso prévio?</label>
-                    <select>
+                    <select id="avisoPrevio">
                         <option>Sim</option>
                         <option>Não</option>
                     </select>
@@ -74,7 +74,7 @@
 
                 <div class="input-group">
                     <label>Férias vencidas?</label>
-                    <select>
+                    <select id="feriasVencidas">
                         <option>Não</option>
                         <option>Sim</option>
                     </select>
@@ -82,19 +82,19 @@
 
                 <div class="input-group">
                     <label>Saldo FGTS</label>
-                    <input type="text" placeholder="R$ 0,00">
+                    <input type="text" id="saldoFgts" placeholder="R$ 0,00">
                 </div>
 
                 <div class="input-group">
                     <label>Dias trabalhados</label>
-                    <input type="number" placeholder="Ex: 15">
+                    <input type="number" id="diasTrabalhados" placeholder="Ex: 15">
                 </div>                
             </div>
 
-            <button>Calcular Rescisão</button>
+            <button id="btnCalcular">Calcular Rescisão</button>
 
             <div class="resultado">
-                <p>Resultado aparece aqui.</p>
+                <p id="resultadoFinal">Resultado aparece aqui.</p>
             </div>  
         </section>
 
