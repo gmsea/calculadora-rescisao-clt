@@ -55,7 +55,7 @@ body {
 .container {
     max-width: 900px;
     width: 100%;
-    margin: auto;
+    margin: 40px auto;
     background: #ffffff;
     border-radius: 20px;
     display: flex;
@@ -166,7 +166,7 @@ button:hover {
 .resultado {
     margin-top: 20px;
     background: #e0f2fe;
-    padding: 30px;
+    padding: 60px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
