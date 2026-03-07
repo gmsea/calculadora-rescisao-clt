@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
 </head>
-<body>
-<header class="topbar">
-    <button class="menu-btn">☰</button>
 
-    <nav class="menu">
-        <a href="#">Calculadora FGTS</a>
-        <a href="#">Calculadora Férias</a>
-        <a href="#">Saque-Aniversário</a>
-    </nav>
-</header>
+<body>
+    <header class="topbar">
+        <button class="menu-btn">☰</button>
+
+        <nav class="menu">
+            <a href="#">Calculadora FGTS</a>
+            <a href="#">Calculadora Férias</a>
+            <a href="#">Saque-Aniversário</a>
+        </nav>
+    </header>
     <main class="container">
 
         <section class="info">
@@ -27,7 +29,7 @@
             </div>
 
             <div class="info-texto">
-                <h1>Caculadora<br>Rescisão Trabalhista</h1>
+                <h1>Calculadora<br>Rescisão Trabalhista</h1>
                 <p>
                     Simule sua rescisão CLT de forma simples, rápida
                     e com valores aproximados.
@@ -35,7 +37,7 @@
             </div>
         </section>
 
-        <secttion class="calculator">
+        <section class="calculator">
 
             <div class="inputs">
 
@@ -45,8 +47,8 @@
                 </div>
 
                 <div class="input-group">
-                    <label>Sálario atual</label>
-                    <input type="text" id="salario" placeholder="R$ 0,00">
+                    <label>Salário atual</label>
+                    <input type="number" id="salario" placeholder="R$ 0,00">
                 </div>
 
                 <div class="input-group">
@@ -82,20 +84,37 @@
 
                 <div class="input-group">
                     <label>Saldo FGTS</label>
-                    <input type="text" id="saldoFgts" placeholder="R$ 0,00">
+                    <input type="number" id="saldoFgts" placeholder="R$ 0,00">
                 </div>
 
                 <div class="input-group">
                     <label>Dias trabalhados</label>
                     <input type="number" id="diasTrabalhados" placeholder="Ex: 15">
-                </div>                
+                </div>
             </div>
 
-            <button id="btnCalcular">Calcular Rescisão</button>
+            <button id="btnCalcular" type="button">Calcular Rescisão</button>
 
-            <div class="resultado">
-                <p id="resultadoFinal">Resultado aparece aqui.</p>
-            </div>  
+            <div class="resultado" id="resultadoFinal">
+
+                <h3>Resumo da Rescisão</h3>
+
+                <p>
+                    <span>Saldo de salário</span>
+                    <span>R$ 1.500,00</span>
+                </p>
+
+                <p>
+                    <span>Aviso prévio</span>
+                    <span>R$ 1.500,00</span>
+                </p>
+
+                <p>
+                    <span>13º proporcional</span>
+                    <span>R$ 375,00</span>
+                </p>
+
+            </div>
         </section>
 
     </main>
